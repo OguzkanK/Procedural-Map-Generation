@@ -6,7 +6,7 @@ from PIL import Image, ImageDraw
 
 mapSize = 0
 
-tilesArray = [0, 1, 2, 3, 4]
+tilesArray = [0, 1, 2, 3, 4, 5]
 tileDic = {
     0: [0, 1],
     1: [0, 1, 2, 4],
@@ -229,7 +229,6 @@ def RandomizeMap(map, mapSize):
     progressBar = 0
     randomLocation = random.randint(1, mapSize * mapSize)
     randomTile = random.randint(0, len(tilesArray) - 1)
-    randomTile = 1
 
     for i in range(len(tilesArray)):
         if i != randomTile:
